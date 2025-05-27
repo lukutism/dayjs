@@ -93,6 +93,8 @@ class Dayjs {
   parse(cfg) {
     this.$d = parseDate(cfg)
     this.init()
+    this.$value = cfg.date // for plugin use
+    this.$utcValue = cfg.utc
   }
 
   init() {
